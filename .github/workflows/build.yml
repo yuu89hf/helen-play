@@ -1,7 +1,7 @@
 name: Cloud Build Android APK
 
 on:
-  workflow_dispatch: # Memungkinkan klik tombol build manual
+  workflow_dispatch: # Mengaktifkan tombol build manual
 
 jobs:
   build:

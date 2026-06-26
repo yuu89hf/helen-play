@@ -1,0 +1,6 @@
+{
+  "name": "Helen Play",
+  "description": "Minimalist video player with hold-to-play, drag gestures, and seek resume capabilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

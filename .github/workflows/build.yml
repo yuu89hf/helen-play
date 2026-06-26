@@ -1,7 +1,7 @@
 name: Cloud Build Android APK
 
 on:
-  workflow_dispatch: # Memungkinkan Anda menjalankan build secara manual klik tombol
+  workflow_dispatch: # Memungkinkan klik tombol build manual
 
 jobs:
   build:
@@ -19,9 +19,8 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Generate Build Script and Assemble APK
+      - name: Build Android APK
         run: |
-          gradle init --type basic --dsl kts --incubating
           gradle assembleDebug
 
       - name: Upload APK Artifact
